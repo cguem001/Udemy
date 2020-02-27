@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Arrays/Arrays.iml" filepath="$PROJECT_DIR$/Arrays/Arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Arrays, Java Inbuilt Lists, Autoboxing and Unboxing/Arrays/Arrays.iml" filepath="$PROJECT_DIR$/Arrays, Java Inbuilt Lists, Autoboxing and Unboxing/Arrays/Arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Arrays, Java Inbuilt Lists, Autoboxing and Unboxing/Arrays, Java Inbuilt Lists, Autoboxing and Unboxing.iml" filepath="$PROJECT_DIR$/Arrays, Java Inbuilt Lists, Autoboxing and Unboxing/Arrays, Java Inbuilt Lists, Autoboxing and Unboxing.iml" />
       <module fileurl="file://$PROJECT_DIR$/HelloWorld/HelloWorld.iml" filepath="$PROJECT_DIR$/HelloWorld/HelloWorld.iml" />
       <module fileurl="file://$PROJECT_DIR$/Udemy2.iml" filepath="$PROJECT_DIR$/Udemy2.iml" />
     </modules>
