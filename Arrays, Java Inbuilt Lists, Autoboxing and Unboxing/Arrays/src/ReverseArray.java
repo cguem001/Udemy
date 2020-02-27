@@ -6,7 +6,6 @@ public class ReverseArray {
 
         System.out.println(Arrays.toString(myArray));
         System.out.println();
-        System.out.println(Arrays.toString(revereArray(myArray)));
 
     }
 
