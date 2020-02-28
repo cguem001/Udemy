@@ -14,6 +14,13 @@ public class MobilePhone {
         this.myContacts = new ArrayList<Contacts>();
     }
 
+    public void printContacts() {
+        System.out.println("Contact list");
+        for(int i = 0; i < this.myContacts.size(); i++) {
+            System.out.println((i+1) + "," + this.myContacts.get(i).getName() + "-->" + this.myContacts.get(i).getNumber());
+        }
+    }
+
     public boolean addNewContact(Contacts contact) {
         if (findContact(contact) >= 0) {
             System.out.println("The contact already exists");

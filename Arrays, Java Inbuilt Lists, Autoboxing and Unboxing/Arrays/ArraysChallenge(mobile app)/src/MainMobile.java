@@ -6,26 +6,44 @@ public class MainMobile {
     private static Scanner sc = new Scanner(System.in);
     private static MobilePhone mobilePhone = new MobilePhone("91 638 09 06");
 
-    boolean quit = false;
-    startPhone();
-    printActions();
-    while(!quit) {
 
-    }
-
-    private static void startPhone() {
-        System.out.println("Starting phone...");
-    }
-
-    private static void printActions() {
-        System.out.println("\nAvailable actions:\npress");
-        System.out.println("\t Print list of contacts");
-        System.out.println("\t Add new contact");
-    }
 
     public static void main(String[] args) {
 
+        boolean quit = false;
+        startPhone();
+        printActions();
+        while(!quit) {
+            System.out.println("\n Enter action: (6 to show available actions)");
+            int action = sc.nextInt();
+            sc.nextLine();
 
+            switch (action) {
+                case 0:
+                    System.out.println("\nShutting down...");
+                    quit=true;
+                    break;
+                case 1:
+                    mobilePhone.printContacts();
+                    break;
+                case 2:
+                    addNewContact();
+                    break;
+                case 3:
+                  //  updateContact();
+                    break;
+                case 4:
+                   // removeContact();
+                    break;
+                case 5:
+                   // queryContact();
+                    break;
+                case 6:
+                    printActions();
+                    break;
+
+            }
+        }
 
 
 
@@ -41,50 +59,41 @@ public class MainMobile {
 
             int input = sc.nextInt();
 
-            switch (input) {
-                case 1:
-                    printListOfContacts();
-                    break;
-                case 2:
-                    addContact();
-                    break;
-                case 3:
-                    modifyContact();
-                    break;
-                case 4:
-                    removeContact();
-                    break;
-                case 5:
-                    searchContact();
-                    break;
-                case 6:
-                    option = false;
 
-            }
         }
-
-
     }
 
-    public static void printListOfContacts() {
-        contacts.printContacts();
-    }
-
-    public void addContact() {
-        System.out.println("Please enter a name");
-        Contacts.createContact(sc.nextLine(),sc.nextLine());
-        myContacts.add
+    private static void addNewContact(){
+        System.out.println("Enter new name contact");
+        String name = sc.nextLine();
         sc.nextLine();
-//        System.out.println("Please enter a number");
-//        contacts.addContactNumber(sc.nextInt());
-//        System.out.println("Contact successfully added");
+        System.out.println("Enter new number contact");
+        String number = sc.nextLine();
+        sc.nextLine();
+
+        Contacts newContact = Contacts.createContact(name,number);
+        if(mobilePhone.addNewContact(newContact)) {
+            System.out.println("New contact added: name = " + name + ", phone = " + number);
+        } else {
+            System.out.println("Cannot add, " + name + " already on file");
+        }
     }
 
-    public static void modifyContact(){}
+    private static void startPhone() {
+        System.out.println("Starting phone...");
+    }
 
-    public static void removeContact(){}
 
-    public static void searchContact() {}
-
+    private static void printActions() {
+        System.out.println("\nAvailable actions:\npress");
+        System.out.println("\t 0 - To shutdown\n" +
+                "\t 1 - To print contacts\n" +
+                "\t 2 - To add a new contact\n" +
+                "\t 3 - to update existing an existing contact\n " +
+                "\t 4 - to remove an existing contact\n" +
+                "\t 5 - query item existing contact exists" +
+                "\t 6 - to print a list of available actions.");
+        System.out.println("Choose your action: ");
+    }
 
 }
