@@ -120,7 +120,6 @@ public class MainMobile {
     private static void addNewContact(){
         System.out.println("Enter new name contact");
         String name = sc.nextLine();
-        sc.nextLine();
         System.out.println("Enter new number contact");
         String number = sc.nextLine();
         sc.nextLine();
