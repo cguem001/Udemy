@@ -142,7 +142,7 @@ public class MainMobile {
         System.out.println("\t 0 - To shutdown\n" +
                 "\t 1 - To print contacts\n" +
                 "\t 2 - To add a new contact\n" +
-                "\t 3 - to update existing an existing contact\n " +
+                "\t 3 - to update an existing contact\n " +
                 "\t 4 - to remove an existing contact\n" +
                 "\t 5 - query item existing contact exists" +
                 "\t 6 - to print a list of available actions.");
