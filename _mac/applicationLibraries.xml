@@ -46,5 +46,12 @@
         <root url="file://$APPLICATION_PLUGINS_DIR$/python-ce/helpers/typeshed/third_party/2and3" />
       </SOURCES>
     </library>
+    <library name="src">
+      <CLASSES />
+      <JAVADOC />
+      <SOURCES>
+        <root url="file://$USER_HOME$/Desktop/Java CodeWars/Section14BasicInput&amp;OutputIncludingjava.util/TaskExampleFX/src" />
+      </SOURCES>
+    </library>
   </component>
 </application>
