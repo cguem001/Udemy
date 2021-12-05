@@ -26,8 +26,12 @@
           <option name="url" value="https://git-rba.hackerrank.com/git/d826fb5a-ce37-4e2a-9098-08b1028f1eda" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/cguem001/scala.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="$USER_HOME$/Documents/Java" />
+    <option name="cloneParentDir" value="$USER_HOME$/Documents" />
   </component>
 </application>
