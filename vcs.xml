@@ -34,8 +34,12 @@
           <option name="url" value="https://github.com/cguem001/CodeToSuccess.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/inancgumus/learngo.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="$USER_HOME$/Documents/Java" />
+    <option name="cloneParentDir" value="$USER_HOME$/Documents/golang/GoLearning" />
   </component>
 </application>
