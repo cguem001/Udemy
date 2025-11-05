@@ -46,8 +46,12 @@
           <option name="url" value="https://github.com/Trinetix-Devs/PixelVerse.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://bitbucket.org/ecommerce_dev_challenge/ecom_engine_dev.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="$USER_HOME$/Documents" />
+    <option name="cloneParentDir" value="$USER_HOME$/Desktop/Jerome" />
   </component>
 </application>
